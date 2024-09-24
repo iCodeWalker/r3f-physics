@@ -66,6 +66,9 @@ export default function Experience() {
   darkWoodTexture.wrapS = THREE.RepeatWrapping;
   darkWoodTexture.wrapT = THREE.RepeatWrapping;
 
+  woodTexture.wrapS = THREE.RepeatWrapping;
+  woodTexture.wrapT = THREE.RepeatWrapping;
+
   console.log(woodTexture, "woodTexture");
 
   return (
@@ -89,27 +92,27 @@ export default function Experience() {
 
       <mesh>
         <extrudeGeometry args={[doorModel, extrudeSettings]} />
-        <meshPhongMaterial color={woodColor} map={darkWoodTexture} />
+        <meshPhongMaterial color={darkWoodColor} map={woodTexture} />
       </mesh>
 
       <mesh position-z={-0.05} position-x={0.2}>
         <extrudeGeometry args={[designModel1, extrudeSettings2]} />
-        <meshBasicMaterial color={woodColor} map={woodTexture} />
+        <meshBasicMaterial color={darkWoodColor} map={woodTexture} />
       </mesh>
 
       <mesh position-z={-0.05} position-x={1.3}>
         <extrudeGeometry args={[designModel1, extrudeSettings2]} />
-        <meshBasicMaterial color={woodColor} map={woodTexture} />
+        <meshBasicMaterial color={darkWoodColor} map={woodTexture} />
       </mesh>
 
       <mesh position-z={-0.05} position-x={0.2} position-y={2}>
         <extrudeGeometry args={[designModel1, extrudeSettings2]} />
-        <meshBasicMaterial color={woodColor} map={woodTexture} />
+        <meshBasicMaterial color={darkWoodColor} map={woodTexture} />
       </mesh>
 
       <mesh position-z={-0.05} position-x={1.3} position-y={2}>
         <extrudeGeometry args={[designModel1, extrudeSettings2]} />
-        <meshBasicMaterial color={woodColor} map={woodTexture} />
+        <meshBasicMaterial color={darkWoodColor} map={woodTexture} />
       </mesh>
 
       {/* <mesh position-z={-0.05} position-x={0.4} position-y={3}>
